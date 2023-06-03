@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../src/index.css">
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/jquery.cookie/jquery.cookie.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="../src/index.js"></script>
+</head>
+<body>
+    <header>
+        <div class="d-flex justify-content-between" style="background-color: rgb(238, 238, 238);">
+            <div class="p-2">
+                <span id="CustomerId" style="border-right: 1px solid black; padding: 5px;"></span> &nbsp; 
+                <span class="bi bi-truck"> <span style="font-size: 12px;">FREE SHIPPING WORLDWIDE</span></span>
+            </div>
+
+            <div class="d-flex justify-content-between">
+                <div class="me-4">
+                    <button class="btn" id="btnShipping">Shipping</button>
+                    <button class="btn" id="btnFAQ">FAQ's</button>
+                    <button class="btn" id="btnContact">Contact</button>
+                    <button class="btn" id="btnLogout">Logout</button>
+                </div>
+                <div>
+                    <button class="bi bi-instagram btn"></button>
+                    <button class="bi bi-facebook btn"></button>
+                    <button class="bi bi-twitter btn"></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-3 d-flex justify-content-around">
+            <h2><span class="bi bi-cart3"></span> I-Shop.</h2>
+
+            <div id="midNav">
+                <button class="btn btn-dark m-2" id="btnHome">Home</button>
+                <button class="btn btn-dark m-2" id="btnCustomer">Customer</button>
+                <button class="btn btn-dark m-2" id="btnAdmin">Admin</button>
+            </div>
+            
+            <div>
+                <button class="bi bi-person btn btn-danger m-2" data-bs-toggle="modal" data-bs-target="#Profiledetails"></button>
+                <div class="modal" id="Profiledetails">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3>Customers Profile</h3>
+                                <button class="btn btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div id="customersProfileDetails"></div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+
+                <button class="bi bi-cart btn btn-danger m-2" style="position: relative;" id="btnCart" data-bs-toggle="modal" data-bs-target="#CartDetails">
+                    <span class="bg-dark text-light rounded badge" id="lblCount" style="position: absolute;"></span>
+                </button>
+                <div class="modal" id="CartDetails">
+                    <div class="modal-dialog">
+                        <div class="modal-content" id="cartContent">
+                            <div class="modal-header">
+                                <h2>Your Cart</h2>
+                                <button class="btn btn-close" data-bs-dismiss="modal"></button>        
+                            </div>
+                            <div class="modal-body">
+                                <div id="emptyCart">
+                                    <span>Cart is Empty</span>
+                                    <button class="btn btn-link" id="btnContinueShopping" data-bs-dismiss="modal">continue shopping</button>
+                                </div>
+
+                                <table class="table table-hover" id="cartTable" style="display: none;">
+                                    <thead>
+                                        <tr>
+                                            <th>Preview</th>
+                                            <th>Title</th>
+                                            <th>Price</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="cartItems">
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="bi bi-heart btn btn-danger m-2"></button>
+            </div>
+        </div>
+
+        <div class="bg-dark text-light text-center" id="shopperHeading">
+            <div>
+                <h5 class="p-3"><span class="bi bi-lightning-fill" style="color: goldenrod;"></span> HAPPY HOLIDAY DEALS ON EVERYTHING <span class="bi bi-lightning-fill" style="color: goldenrod;"></span></h5>
+            </div>
+        </div>
+    </header> 
+
+    <section>
+        
+    </section>
+
+    <footer class="bg-dark text-light mt-4 p-4">
+        <div class="d-flex justify-content-center">
+            <div style="width: 500px">
+                <div style="font-size: 20px;" class="text-center">
+                    Want style Ideas and Treats?
+                </div>
+                <div class="input-group mt-4">
+                    <input type="email" class="form-control p-2" placeholder="Enter Email *">
+                    <button class="btn btn-danger ms-2">Suscribe</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-between text-light mt-4">
+            <div>
+                <h2>I-Shop.</h2>
+                <div>
+                    <button class="bi bi-instagram btn btn-light"></button>
+                    <button class="bi bi-facebook btn btn-light"></button>
+                    <button class="bi bi-twitter btn  btn-light"></button>
+                </div>
+            </div>
+
+            <div>
+                <ul style="list-style: none;">
+                    <li style="font-size: 16px;" class="mb-2">SUPPORT</li>
+                    <li>Contact Us</li>
+                    <li>FAQ's</li>
+                    <li>Size Guide</li>
+                </ul>
+            </div>
+
+            <div>
+                <ul style="list-style: none;">
+                    <li style="font-size: 16px;" class="mb-2">SUPPORT</li>
+                    <li>Contact Us</li>
+                    <li>FAQ's</li>
+                    <li>Size Guide</li>
+                </ul>
+            </div>
+
+            <div>
+                <ul style="list-style: none;">
+                    <li style="font-size: 16px;" class="mb-2">SUPPORT</li>
+                    <li>Contact Us</li>
+                    <li>FAQ's</li>
+                    <li>Size Guide</li>
+                </ul>
+            </div>
+
+            <div>
+                <ul style="list-style: none;">
+                    <li style="font-size: 16px;" class="mb-2">SUPPORT</li>
+                    <li>Contact Us</li>
+                    <li>FAQ's</li>
+                    <li>Size Guide</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

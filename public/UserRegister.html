@@ -1,0 +1,31 @@
+<div class="d-flex justify-content-center mt-3">
+    <div class="w-75 border p-4 rounded" id="registerForm">
+        <h2 class="text-center">User Registration</h2>
+        <dl>
+            <dd id="UserError" class="text-danger">The fields marked with an asterisk are mandatory</dd>
+            <dt><span class="text-danger" style="font-size: 20px;">*</span> User Id:</dt>
+            <dd><input type="text" id="txtId" class="form-control" placeholder="Enter valid user id"></dd>
+            <dd id="userIdError"></dd>
+
+            <dt>Username:</dt>
+            <dd><input type="text" id="txtUserName" class="form-control" placeholder="Enter your name"></dd>
+            <dd id="userNameError"></dd>
+
+            <dt><span class="text-danger" style="font-size: 20px;">*</span> Password:</dt> 
+            <dd><input type="password" id="txtPassword" class="form-control" placeholder="Enter password"></dd>
+            <dd id="userPassError"></dd>
+
+            <dt><span class="text-danger" style="font-size: 20px;">*</span> Email:</dt>
+            <dd><input type="email" id="txtMail" class="form-control" placeholder="Enter valid email"></dd>
+            <dd id="userMailError"></dd>
+
+            <dt>Age</dt>
+            <dd><input type="number" id="txtAge" class="form-control" placeholder="Enter your age in number"></dd>
+
+            <dt>Mobile:</dt>
+            <dd><input type="text" id="txtMobile" class="form-control" placeholder="Enter your mobile number"></dd>
+        </dl>
+        <button id="btnRegister" class="btn btn-primary">Register</button><br>
+        <button class="btn btn-link" style="text-decoration: none;" id="btnExistingLogin">Existing User? Login</button>
+    </div>
+</div>

@@ -1,0 +1,64 @@
+#midNav button{
+    width: 100px;
+}
+body{
+    font-family: arial;
+}
+#navbtnRegister, #navbtnLogin{
+    width: 300px;
+}
+#banner{
+    background-image: url(../public/images/banner.JPG);
+    background-size: cover;
+    height: 900px;
+}
+
+#adminBanner{
+    background-image: url(../public/images/banner.JPG);
+    background-size: cover;
+    height: 700px;
+}
+
+#bannerColor{
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 900px;
+}
+#registerForm, #loginForm, #adminForm{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+#txtId, #txtUserName, #txtMail, #txtAge, #txtPassword, #txtMobile, #logtxtPassword, #logtxtId, #txtVendorsName, #txtVendorsId, #txtVendorsEmail, #txtVendorsPassword{
+    background-color: rgba(0,0,0,0.3);
+    color: rgb(210, 212, 214);
+}
+#txtId::placeholder, #txtMail::placeholder, #txtAge::placeholder, #txtMobile::placeholder, #txtPassword::placeholder, #logtxtPassword::placeholder, #txtUserName::placeholder, #logtxtId::placeholder, #txtVendorsName::placeholder, #txtVendorsId::placeholder, #txtVendorsEmail::placeholder, #txtVendorsPassword::placeholder{
+    color: rgb(210, 212, 214);
+}
+
+marquee span{
+    font-size: 40px;
+    margin-right: 60px;
+    text-shadow: 5px 5px 5px grey;
+    color: rgb(210, 212, 214);
+    background-color: rgba(100, 100, 100, 0.6);
+    padding: 15px;
+    border-radius: 20%;   
+}
+
+#sellerBanner{
+    background-image: url("../public/images/sellerBanner.jpg");
+    height: 200px;
+}
+#sellerbannerColor{
+    background-color: rgba(0,0,0,0.7);
+    height: 200px;
+}
+
+#sellerCaption{
+    color: rgb(210, 212, 214);
+    font-size: 35px;
+    text-shadow: 5px 5px 5px grey;
+}
+#cartContent{
+    height: 400px;
+    overflow: scroll;
+}
